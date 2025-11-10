@@ -34,7 +34,8 @@ const MenuOverlay: React.FC<{ onClose: () => void }> = ({ onClose }) => {
         {[
           { path: '/', label: 'HOME', number: '01' },
           { path: '/projects', label: 'PROJECTS', number: '02' },
-          { path: '/about', label: 'ABOUT', number: '03' }
+          { path: '/about', label: 'ABOUT', number: '03' },
+          { path: '/events', label: 'EVENTS', number: '04' }
         ].map(item => (
           <NavLink key={item.path} to={item.path} className="font-sans group" onClick={onClose}>
             <div className={`flex items-center transition-colors duration-300 ${getLinkClass(item.path)}`}>
